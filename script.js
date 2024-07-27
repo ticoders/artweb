@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 function fetchArtworks() {
     const content = document.getElementById('content');
-    content.innerHTML = ''; // Clear content for artworks
+    content.innerHTML = '';  
     fetch('https://api.artic.edu/api/v1/artworks')
         .then(response => response.json())
         .then(data => displayArtworks(data.data))
