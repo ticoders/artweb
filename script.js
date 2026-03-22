@@ -28,7 +28,15 @@ function displayArtworks(artworks) {
         box.className = 'box';
         box.innerHTML = 
            `<img src="https://www.artic.edu/iiif/2/${artwork.image_id}/full/400,/0/default.jpg" alt="${artwork.title}">
+           
+           <a href="https://www.artic.edu/artworks/${artwork.id}" 
+           target="_blank" 
+           rel="noopener noreferrer" 
+           style="color: black; text-decoration: none;">
             <h3>${artwork.title}</h3>
+            </a>
+        
+        
             <p>${artwork.artist_display}</p>
             <p>${artwork.thumbnail.alt_text}</p>`;
              
